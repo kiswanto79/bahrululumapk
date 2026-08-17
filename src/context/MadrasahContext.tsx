@@ -153,10 +153,10 @@ interface MadrasahContextType {
 
 const DEFAULT_USER: UserProfile = {
   id: 'usr-admin',
-  name: 'Dr. KH. Abdullah Munir, M.Pd.I',
-  email: 'kepala@madrasah-alazhar.sch.id',
+  name: 'King Salman AF',
+  email: 'bahrululumku@gmail.com',
   role: 'admin',
-  nip: '197508152002121003',
+  nip: '198205142008011015',
   photoUrl: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&auto=format&fit=crop&q=80',
 };
 
@@ -165,7 +165,18 @@ const MadrasahContext = createContext<MadrasahContextType | undefined>(undefined
 export const MadrasahProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [currentUser, setCurrentUser] = useState<UserProfile>(() => {
     const saved = localStorage.getItem('madrasah_user');
-    return saved ? JSON.parse(saved) : DEFAULT_USER;
+    if (saved) {
+      try {
+        const parsed = JSON.parse(saved);
+        if (parsed.name === 'Dr. KH. Abdullah Munir, M.Pd.I') {
+          return DEFAULT_USER;
+        }
+        return parsed;
+      } catch (e) {
+        return DEFAULT_USER;
+      }
+    }
+    return DEFAULT_USER;
   });
 
   const [madrasahInfo, setMadrasahInfo] = useState<MadrasahInfo>(() => {

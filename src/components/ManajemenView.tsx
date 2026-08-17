@@ -480,7 +480,7 @@ export const ManajemenView: React.FC = () => {
                   className="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-400 hover:to-teal-400 text-slate-950 font-bold text-xs shadow-lg shadow-emerald-950/40 transition-all transform active:scale-95 cursor-pointer"
                 >
                   <UserPlus className="w-4 h-4" />
-                  <span>Tambah Asatidz</span>
+                  <span>Tambah Guru / Asatidz</span>
                 </button>
               )
             )}
@@ -534,7 +534,7 @@ export const ManajemenView: React.FC = () => {
             }`}
           >
             <ShieldCheck className="w-3.5 h-3.5" />
-            <span>Dewan Asatidz ({guruList.length})</span>
+            <span>Guru & Staf / Asatidz ({guruList.length})</span>
           </button>
         </div>
 
