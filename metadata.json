@@ -1,0 +1,11 @@
+{
+  "name": "Madrasah Digital Smart",
+  "description": "Aplikasi Sistem Informasi & Manajemen Madrasah Terpadu dengan integrasi Google Sheets & Drive Cloud Sync, POS Kasir & Koperasi Syariah (Smart Card Debet), Tabungan Santri & Asatidz (Wadiah), SIAKAD, Presensi Digital GPS/Foto, Buku Nilai, Hafalan Tahfidz, Jadwal Sholat, SPP & Keuangan, serta E-Kartu Pelajar.",
+  "requestFramePermissions": [
+    "camera",
+    "geolocation"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

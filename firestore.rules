@@ -1,0 +1,9 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Madrasah collections: students, teachers, attendance, tahfidz, grades, finance, announcements, settings
+    match /{document=**} {
+      allow read, write: if true; // Allow access for the madrasah collaborative app
+    }
+  }
+}
