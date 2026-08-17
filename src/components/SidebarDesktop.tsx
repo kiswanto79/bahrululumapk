@@ -60,7 +60,7 @@ export const SidebarDesktop: React.FC<SidebarDesktopProps> = ({ onOpenRoleModal 
           <div className="w-11 h-11 rounded-2xl bg-gradient-to-tr from-emerald-500 via-emerald-600 to-amber-400 p-0.5 shadow-lg shadow-emerald-950 flex items-center justify-center overflow-hidden">
             <div className="w-full h-full bg-slate-950/80 backdrop-blur-md rounded-[14px] flex items-center justify-center overflow-hidden">
               {madrasahInfo.logoUrl ? (
-                <img src={madrasahInfo.logoUrl} alt="Logo" className="w-full h-full object-cover" />
+                <img src={madrasahInfo.logoUrl} alt="Logo" referrerPolicy="no-referrer" className="w-full h-full object-cover" />
               ) : (
                 <Building2 className="w-6 h-6 text-amber-400" />
               )}

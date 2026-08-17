@@ -76,7 +76,7 @@ export const NavbarTop: React.FC<NavbarTopProps> = ({
             <div className="w-9 h-9 sm:w-11 sm:h-11 rounded-2xl bg-gradient-to-br from-emerald-400 via-teal-500 to-amber-400 p-0.5 shadow-md shadow-emerald-950 flex items-center justify-center relative shrink-0">
               <div className="w-full h-full bg-slate-950/80 backdrop-blur-md rounded-[14px] flex items-center justify-center overflow-hidden">
                 {madrasahInfo.logoUrl ? (
-                  <img src={madrasahInfo.logoUrl} alt="Logo" className="w-full h-full object-cover" />
+                  <img src={madrasahInfo.logoUrl} alt="Logo" referrerPolicy="no-referrer" className="w-full h-full object-cover" />
                 ) : (
                   <GraduationCap className="w-5 h-5 sm:w-6 sm:h-6 text-amber-400 group-hover:scale-110 transition-transform" />
                 )}

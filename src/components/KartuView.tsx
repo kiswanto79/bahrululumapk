@@ -168,7 +168,7 @@ export const KartuView: React.FC = () => {
               <div className="flex items-center gap-2">
                 <div className="w-8 h-8 rounded-xl bg-gradient-to-br from-amber-400 to-yellow-500 p-0.5 flex items-center justify-center overflow-hidden shrink-0">
                   {madrasahInfo.logoUrl ? (
-                    <img src={madrasahInfo.logoUrl} alt="Logo" className="w-full h-full object-cover rounded-[10px]" />
+                    <img src={madrasahInfo.logoUrl} alt="Logo" referrerPolicy="no-referrer" className="w-full h-full object-cover rounded-[10px]" />
                   ) : (
                     <Building2 className="w-5 h-5 text-slate-950" />
                   )}

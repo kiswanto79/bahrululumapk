@@ -1,6 +1,6 @@
 {
-  "name": "Madrasah Digital Smart",
-  "description": "Aplikasi Sistem Informasi & Manajemen Madrasah Terpadu dengan integrasi Google Sheets & Drive Cloud Sync, POS Kasir & Koperasi Syariah (Smart Card Debet), Tabungan Santri & Asatidz (Wadiah), SIAKAD, Presensi Digital GPS/Foto, Buku Nilai, Hafalan Tahfidz, Jadwal Sholat, SPP & Keuangan, serta E-Kartu Pelajar.",
+  "name": "Madrasah Bahrul Ulum",
+  "description": "Sistem Informasi & Manajemen Madrasah Bahrul Ulum (Bahrululumku) - Brangsong Kendal Jawa Tengah. SIAKAD, Presensi Digital, POS Koperasi, Tabungan Santri, Tahfidz & Keuangan.",
   "requestFramePermissions": [
     "camera",
     "geolocation"

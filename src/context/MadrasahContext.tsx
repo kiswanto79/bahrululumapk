@@ -38,6 +38,7 @@ import {
   INITIAL_PRODUK_KOPERASI,
   INITIAL_TRANSAKSI_KOPERASI
 } from '../data/initialMadrasahData';
+import { formatImageUrl } from '../lib/imageHelper';
 import { 
   auth, 
   googleProvider, 
@@ -169,7 +170,22 @@ export const MadrasahProvider: React.FC<{ children: React.ReactNode }> = ({ chil
 
   const [madrasahInfo, setMadrasahInfo] = useState<MadrasahInfo>(() => {
     const saved = localStorage.getItem('madrasah_info');
-    return saved ? JSON.parse(saved) : MADRASAH_INFO;
+    if (saved) {
+      try {
+        const parsed = JSON.parse(saved);
+        // If saved data was the old default placeholder Al-Azhar, auto-migrate to new Madrasah Bahrul Ulum
+        if (parsed.nama === 'Madrasah Unggulan Terpadu Al-Azhar' || !parsed.nama) {
+          return MADRASAH_INFO;
+        }
+        return {
+          ...parsed,
+          logoUrl: formatImageUrl(parsed.logoUrl)
+        };
+      } catch (e) {
+        return MADRASAH_INFO;
+      }
+    }
+    return MADRASAH_INFO;
   });
 
   const [activeRole, setActiveRole] = useState<UserRole>(currentUser.role);
@@ -1019,7 +1035,11 @@ export const MadrasahProvider: React.FC<{ children: React.ReactNode }> = ({ chil
   };
 
   const updateMadrasahInfo = (info: Partial<MadrasahInfo>) => {
-    setMadrasahInfo(prev => ({ ...prev, ...info }));
+    const formatted = {
+      ...info,
+      ...(info.logoUrl !== undefined ? { logoUrl: formatImageUrl(info.logoUrl) } : {})
+    };
+    setMadrasahInfo(prev => ({ ...prev, ...formatted }));
     triggerConfetti();
   };
 

@@ -107,7 +107,7 @@ export const MobileDrawer: React.FC<MobileDrawerProps> = ({
               <div className="w-10 h-10 rounded-2xl bg-gradient-to-tr from-emerald-400 via-teal-500 to-amber-400 p-0.5 shadow-md flex items-center justify-center shrink-0">
                 <div className="w-full h-full bg-slate-950/80 backdrop-blur-md rounded-[14px] flex items-center justify-center overflow-hidden">
                   {madrasahInfo.logoUrl ? (
-                    <img src={madrasahInfo.logoUrl} alt="Logo" className="w-full h-full object-cover" />
+                    <img src={madrasahInfo.logoUrl} alt="Logo" referrerPolicy="no-referrer" className="w-full h-full object-cover" />
                   ) : (
                     <Building2 className="w-5 h-5 text-amber-400" />
                   )}

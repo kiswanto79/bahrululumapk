@@ -35,6 +35,11 @@ import { ImportSiswaModal } from './ImportSiswaModal';
 
 const LOGO_PRESETS = [
   {
+    name: 'Logo Resmi Bahrul Ulum',
+    url: 'https://lh3.googleusercontent.com/d/1rRwCAUiD0TZsSq30FTVvY9WMBd-LxUIj',
+    description: 'Logo Resmi Madrasah Bahrul Ulum'
+  },
+  {
     name: 'Islamic Green Crest',
     url: 'https://images.unsplash.com/photo-1590076215667-875d4ef2d7ee?w=200&auto=format&fit=crop&q=80',
     description: 'Logo Kubah Hijau Emas'
@@ -57,6 +62,27 @@ const LOGO_PRESETS = [
 ];
 
 const TEMPLATE_PRESETS: { name: string; info: Partial<MadrasahInfo> }[] = [
+  {
+    name: 'Madrasah Bahrul Ulum (Utama)',
+    info: {
+      nama: 'Madrasah Bahrul Ulum',
+      singkatan: 'Bahrululumku',
+      jenjang: 'Madrasah Terpadu & Pondok Pesantren',
+      akreditasi: 'A (Unggul / Terakreditasi BAN-SM)',
+      nsm: '131233240012',
+      npsn: '20364588',
+      alamat: 'Jl. Tunggul Sari No.1 Brangsong',
+      kota: 'Kendal, Jawa Tengah',
+      telepon: '085290826838',
+      email: 'bahrululumku@gmail.com',
+      website: 'bahrululumku.sch.id',
+      kepalaMadrasah: 'King Salman AF',
+      nipKepala: '198205142008011015',
+      semboyan: 'Membina Generasi Qurani, Berilmu, Beradab & Berakhlakul Karimah',
+      logoText: 'BAHRUL ULUM',
+      logoUrl: 'https://lh3.googleusercontent.com/d/1rRwCAUiD0TZsSq30FTVvY9WMBd-LxUIj',
+    }
+  },
   {
     name: 'MAN 1 Unggulan (Aliyah)',
     info: {

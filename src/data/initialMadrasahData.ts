@@ -1,22 +1,22 @@
 import { MadrasahInfo, Siswa, Guru, Kelas, AbsensiRecord, AbsensiGuruRecord, TahfidzRecord, NilaiMapel, TagihanSPP, KanalPembayaran, Pengumuman, JadwalPelajaran, DoaItem, SurahRingkas, TabunganAccount, TabunganTransaksi, ProdukKoperasi, TransaksiKoperasi } from '../types';
 
 export const MADRASAH_INFO: MadrasahInfo = {
-  nama: 'Madrasah Unggulan Terpadu Al-Azhar',
-  singkatan: 'AL-AZHAR SMART',
-  jenjang: 'MI - MTs - MA Terakreditasi A (Unggul)',
-  akreditasi: 'A (Unggul / BAN-SM)',
-  nsm: '131232040088',
-  npsn: '20278910',
-  alamat: 'Jl. KH. Hasyim Asyari No. 99, Komplek Islamic Center',
-  kota: 'Kendal / Semarang, Jawa Tengah',
-  telepon: '(0294) 381-2299',
-  email: 'info@madrasah-alazhar.sch.id',
-  website: 'www.madrasah-alazhar.sch.id',
-  kepalaMadrasah: 'Dr. KH. Abdullah Munir, M.Pd.I',
-  nipKepala: '197508152002121003',
-  semboyan: 'Membina Generasi Qurani, Cerdas, Berakhlaq Mulia & Berwawasan Global',
-  logoText: 'AL-AZHAR',
-  logoUrl: 'https://images.unsplash.com/photo-1590076215667-875d4ef2d7ee?w=200&auto=format&fit=crop&q=80',
+  nama: 'Madrasah Bahrul Ulum',
+  singkatan: 'Bahrululumku',
+  jenjang: 'Madrasah Terpadu & Pondok Pesantren',
+  akreditasi: 'A (Unggul / Terakreditasi BAN-SM)',
+  nsm: '131233240012',
+  npsn: '20364588',
+  alamat: 'Jl. Tunggul Sari No.1 Brangsong',
+  kota: 'Kendal, Jawa Tengah',
+  telepon: '085290826838',
+  email: 'bahrululumku@gmail.com',
+  website: 'bahrululumku.sch.id',
+  kepalaMadrasah: 'King Salman AF',
+  nipKepala: '198205142008011015',
+  semboyan: 'Membina Generasi Qurani, Berilmu, Beradab & Berakhlakul Karimah',
+  logoText: 'BAHRUL ULUM',
+  logoUrl: 'https://lh3.googleusercontent.com/d/1rRwCAUiD0TZsSq30FTVvY9WMBd-LxUIj',
 };
 
 export const INITIAL_SISWA: Siswa[] = [
@@ -812,7 +812,7 @@ export const INITIAL_KANAL_PEMBAYARAN: KanalPembayaran[] = [
     kode: 'BSI',
     tipe: 'va',
     nomorRekening: '7123-4567-8901',
-    atasNama: 'Baitul Maal Yayasan Al-Azhar',
+    atasNama: 'Baitul Maal Madrasah Bahrul Ulum',
     aktif: true,
     keterangan: 'Virtual Account & Transfer Otomatis BSI',
     instruksi: 'Masukkan kode bayar atau transfer langsung ke rekening yayasan. Konfirmasi otomatis via sistem.'
@@ -823,7 +823,7 @@ export const INITIAL_KANAL_PEMBAYARAN: KanalPembayaran[] = [
     kode: 'MUAMALAT',
     tipe: 'bank',
     nomorRekening: '531-0023-456',
-    atasNama: 'Yayasan Madrasah Terpadu Al-Azhar',
+    atasNama: 'Yayasan Madrasah Bahrul Ulum',
     aktif: true,
     keterangan: 'Rekening Giro Utama Madrasah',
     instruksi: 'Sertakan keterangan nama santri & kelas pada berita transfer.'
@@ -834,7 +834,7 @@ export const INITIAL_KANAL_PEMBAYARAN: KanalPembayaran[] = [
     kode: 'QRIS',
     tipe: 'qris',
     nomorRekening: 'NMID: ID1020038912345',
-    atasNama: 'Baitul Maal Al-Azhar QRIS',
+    atasNama: 'Baitul Maal Bahrul Ulum QRIS',
     aktif: true,
     keterangan: 'Mendukung BCA, Mandiri, BRI, GoPay, OVO, Dana, ShopeePay',
     instruksi: 'Scan barcode QRIS melalui aplikasi m-banking atau e-wallet apa saja.'
@@ -845,7 +845,7 @@ export const INITIAL_KANAL_PEMBAYARAN: KanalPembayaran[] = [
     kode: 'BRI',
     tipe: 'bank',
     nomorRekening: '0123-01-001234-53-8',
-    atasNama: 'Bendahara Madrasah Al-Azhar',
+    atasNama: 'Bendahara Madrasah Bahrul Ulum',
     aktif: true,
     keterangan: 'Rekening Kas Operasional',
     instruksi: 'Transfer antar bank atau ATM Bersama.'
